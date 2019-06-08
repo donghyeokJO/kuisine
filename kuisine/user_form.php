@@ -25,7 +25,7 @@ if (array_key_exists("user_no", $_GET)) {
     <div class="container">
         <form name="user_form" action="<?=$action?>" method="post" class="fullwidth">
         	<input type = "hidden" id = "user_no" name = "user_no" value="<?=$user['user_no']?>"/>
-        	<p align = "center">중복된 이름은 가질 수 없습니다. 입력해도 db에 영향을 미치지 않아요. 최초에 그 이름으로 등록한 사람이 권리를 가집니다 :)</p>
+        	<p align = "center">중복된 이름은 가질 수 없습니다. </p>
         	<br>
         	<h3>사용자 정보 <?=$mode?></h3>
             <p>

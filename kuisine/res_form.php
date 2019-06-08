@@ -47,7 +47,7 @@ $alone = array("가능","불가능");
     <div class="container">
         <form name="res_form" action="<?=$action?>" method="post" class="fullwidth">
             <input type="hidden" id = "res_no" name="res_no" value="<?=$res['res_no']?>"/>
-            <p align = "center">중복된 이름은 가질 수 없습니다. 입력해도 db에 영향을 미치지 않아요 :)</p>
+            <p align = "center">중복된 이름은 가질 수 없습니다.</p>
         	<br>
             <h3>식당 정보 <?=$mode?></h3>
       
