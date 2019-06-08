@@ -1,0 +1,226 @@
+﻿/* Styles are mainly brought from http://andhart.github.io/bijou/ and https://milligram.github.io/ */
+/* modified 2016-04-22 */
+
+/* 0. Web Font Import */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* 1. Layout */
+
+body {
+    margin-top: 60px; /* to avoid collision of navigation bar and container */
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto; /* to align a contents to center margin: top, right, bottom, left*/
+}
+
+.navbar {
+    background: #F3F3F3;
+    padding: 10px;
+    border-bottom: 1px #DDD solid;
+    box-shadow: 0px 3px 10px #888888;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.navbar .title {
+    color: #191919;
+    font-size: 1.5em;     
+    font-weight: 800;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: .3em 15px 0 0;
+}
+
+.navbar li:last-child {
+    padding-right: 0;
+}
+
+.navbar.fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.footer {
+    width: 100%;
+    background: #CCC;
+    height: 1px;
+    margin: 25px 0;
+    text-align: center;
+    line-height: 3em;
+}
+
+/* 2. Fonts and Paragraph */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;       /* 100~900, 폰트 굵기 */
+}
+
+h1 {
+    font-size: 3.5em;       /* current font-size의 3.5배 */
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: .8em;
+}
+
+p {
+    line-height: 2.5em;      /* 줄간 간격  */
+}
+
+a {
+    font-size: .95em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #5f90b0;
+}
+
+a:hover {
+    color: #406882;
+}
+
+label {
+    font-weight: 700;
+    color: #1e66ff;
+}
+
+/* 3. HTML elements */
+
+/* 3.1. Table */
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.table th, .table td {
+    border-bottom: 1px #CCC solid;
+    padding: 8px 12px;
+}
+
+.table.table-striped tbody tr:nth-child(2n+1) {
+    background-color: #f3f3f3;
+}
+
+.table.table-bordered {
+    border: 1px #CCC solid;
+}
+
+.table.table-bordered td, .table.table-bordered th {
+    border: 1px #CCC solid;
+}
+
+/* 3.2. Button */
+
+.button {
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:2px 0px 2px 0px;
+}
+
+.button.small {
+    padding: 7px 20px;
+    font-size: .95em;
+}
+
+.button.large {
+    padding: 15px 45px;
+    font-size: 1.1em;
+}
+
+.button.primary {
+    color: #FFF;
+    background: #5f90b0;
+}
+
+.button.primary:hover {
+    background: #5589ab;
+}
+
+.button.danger {
+    color: #FFF;
+    background: #e6623c;
+}
+
+.button.danger:hover {
+    background: #e4572e;
+}
+
+/* 3.3. Input */
+
+.fullwidth input[type='text'], input[type='number'], textarea, select {
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%
+}
+
+/* 4. Media */
+/* to define different style rules for different media */
+/* media style makes responsive html */
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 420px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 300px;
+    }
+
+    .container .table {
+        width: 100%;
+        display: block;
+        overflow: auto;
+    }
+
+    body {
+        margin-top: 100px; /* to avoid collision of navigation bar and container */
+    }
+}
